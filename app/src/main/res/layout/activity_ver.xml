@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Ver">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/et_nombre1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="98dp"
+                android:hint="INGRESE NOMBRE" />
+
+            <EditText
+                android:id="@+id/et_apellido1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="152dp"
+                android:hint="INGRESE APELLIDO" />
+
+            <EditText
+                android:id="@+id/et_edad1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="214dp"
+                android:hint="INGRESE EDAD" />
+
+            <EditText
+                android:id="@+id/et_comentario1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="274dp"
+                android:hint="INGRESE COMENTARIO" />
+
+            <EditText
+                android:id="@+id/et_buscar"
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:hint="BUSCAR ID" />
+
+            <Button
+                android:id="@+id/btn_buscar"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="49dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/boton_redondo"
+                android:onClick="onClick"
+                android:text="BUSCAR"
+                android:typeface="sans" />
+
+            <android.support.design.widget.FloatingActionButton
+
+                android:id="@+id/fab_borrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/btn_buscar"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="209dp"
+                android:clickable="true"
+                android:onClick="onClick"
+
+                android:src="@drawable/borrar"
+                android:visibility="visible"
+                app:backgroundTint="#E91E63"
+                app:elevation="5dp"
+                app:fabCustomSize="@android:dimen/app_icon_size"
+                tools:srcCompat="@drawable/borrar" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab_guardar"
+                android:layout_width="52dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginBottom="114dp"
+                android:clickable="true"
+                android:onClick="onClick"
+                app:backgroundTint="#3F51B5"
+                app:elevation="5dp"
+                app:fabCustomSize="@android:dimen/app_icon_size"
+                app:srcCompat="@drawable/guardar" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="160dp"
+                android:layout_height="127dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="108dp"
+                android:layout_marginTop="326dp"
+                app:srcCompat="@drawable/ver" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
